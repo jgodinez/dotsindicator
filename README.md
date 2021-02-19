@@ -1,14 +1,15 @@
 ## dotsindicator
 This library provides a simple implementation for ViewPager widget  dots indicators.
 
-![Alt text](/assets/demo.gif?raw=true "dotsindicator")
-
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![](https://jitpack.io/v/jgodinez/dotsindicator.svg)](https://jitpack.io/#jgodinez/dotsindicator)
+
+![Alt text](/assets/demo.gif?raw=true "dotsindicator")
 
 ## Dependency
 
-**Step 1.** Add the JitPack repository to your build file
+**Step 1.** Add the JitPack repository to your root build.gradle file
 ```gradle
 allprojects {
     repositories {
@@ -21,7 +22,7 @@ allprojects {
 **Step 2.** Add the dependency
 ```gradle
 dependencies {
-    implementation 'com.jgodinez.dotsindicator:1.0.0'
+    implementation 'com.github.jgodinez:dotsindicator:1.0.0'
 }
 ```
 
