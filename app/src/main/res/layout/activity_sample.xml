@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SampleActivity"
+    android:padding="32dp"
+    android:background="@color/mini_shaft">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_title"
+        android:textColor="@color/french_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/customVerticalLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/defaultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="default"
+        android:textColor="@color/french_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/customVerticalLabel" />
+
+    <com.jgodinez.dotsindicator.DotsIndicator
+        android:id="@+id/defaultIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/defaultLabel" />
+
+    <TextView
+        android:id="@+id/customHorizontalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="custom horizontal"
+        android:textColor="@color/french_gray"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalIndicator"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/customVerticalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="custom vertical"
+        android:textColor="@color/french_gray"
+        app:layout_constraintBottom_toTopOf="@+id/verticalIndicator"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.jgodinez.dotsindicator.DotsIndicator
+        android:id="@+id/verticalIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dot_drawable_selected="@drawable/demo_selected_dot"
+        app:dot_drawable_unselected="@drawable/demo_unselected_dot"
+        app:dot_height="20dp"
+        app:dot_margin="10dp"
+        app:dot_orientation="vertical"
+        app:dot_width="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.jgodinez.dotsindicator.DotsIndicator
+        android:id="@+id/horizontalIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dot_drawable_selected="@drawable/demo_orange_selected_dot"
+        app:dot_drawable_unselected="@drawable/demo_pear_unselected_dot"
+        app:dot_height="12dp"
+        app:dot_margin="20dp"
+        app:dot_orientation="horizontal"
+        app:dot_width="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

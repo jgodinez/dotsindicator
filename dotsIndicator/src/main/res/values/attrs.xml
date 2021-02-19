@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DotsIndicator">
+        <attr format="dimension" name="dot_width"/>
+        <attr format="dimension" name="dot_height"/>
+        <attr format="dimension" name="dot_margin"/>
+        <attr format="reference" name="dot_drawable_selected"/>
+        <attr format="reference" name="dot_drawable_unselected"/>
+        <attr format="enum" name="dot_orientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

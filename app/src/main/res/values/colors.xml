@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="amber">#ffc000</color>
+    <color name="mini_shaft">#333333</color>
+    <color name="french_gray">#bfc0c4</color>
+    <color name="outer_space">#2d343c</color>
+    <color name="orange">#ff5722</color>
+    <color name="pear">#cddc39</color>
+</resources>

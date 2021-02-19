@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DotsIndicator</string>
+    <string name="sample_title">dots indicator demo</string>
+    <string name="sample_item_description_bike">bike</string>
+    <string name="sample_item_description_bus">bus</string>
+    <string name="sample_item_description_car">car</string>
+</resources>
